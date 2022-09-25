@@ -53,7 +53,7 @@ const CustomSearchBar = () => {
 
     /**  ------------- end searching behavior --------------------- */
     return (
-        <div className='conainer'>
+        <div className='conainer pl-0 pr-0'>
 
             <div className='row justify-content-center'>
 

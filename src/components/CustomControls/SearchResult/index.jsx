@@ -1,4 +1,5 @@
 import React from 'react';
+import { usernameSpacing } from '../../../utilities/utitlies';
 import Content from '../Content';
 
 const SearchResult = (data, username) => {
@@ -12,12 +13,14 @@ const SearchResult = (data, username) => {
                 username !== null && userdata.length !== 0 ? (
                     <div>
                         <div className="alert alert-primary" role="alert">
-                            username: {data.username.replace(/([a-z])([A-Z])/g, '$1 $2')}
+
+                            username: {usernameSpacing(data.username)}
+
                             <br />
                             {userdata.length} gists found
                         </div>
 
-                        <div>
+                        <div className='table-responsive'>
 
                             <table className="table table-bordered mb-5">
                                 <thead>
